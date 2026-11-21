@@ -1,31 +1,24 @@
 name: CICD
-
-on:
-  workflow_dispatch:
-
+"on":
+  workflow_dispatch: null
 jobs:
   code:
     runs-on: ubuntu-latest
-    stpes:  
+    stpes:
       - name: clone the code
         run: echo "hy this is clone"
   build:
     runs-on: ubuntu-latest
-    stpes:  
+    stpes:
       - name: build the code
         run: echo "hy this is build"
-
   test:
     runs-on: ubuntu-latest
-    stpes:  
+    stpes:
       - name: clone the test
         run: echo "hy this is test"
-
   deploy:
     runs-on: ubuntu-latest
-    stpes:  
+    stpes:
       - name: deploy test
         run: echo "hy this is buld"
-
-  
-    
