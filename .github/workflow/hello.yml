@@ -1,0 +1,11 @@
+name: Hello
+on: 
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    run-on: ubuntu-latest
+
+    steps:
+      - name: say hello to new repo
+        run: echo "hello new repo"
