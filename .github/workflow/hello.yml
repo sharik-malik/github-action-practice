@@ -1,5 +1,7 @@
+
 name: Hello
-on: 
+
+on:
   workflow_dispatch:
 
 jobs:
@@ -7,5 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: say hello to new repo
+      - name: Say hello to new repo
         run: echo "hello new repo"
+
